@@ -1,0 +1,15 @@
+:root {
+    --Orange: hsl(26, 100%, 55%)
+    --PaleOrange: hsl(25, 100%, 94%)
+}
+
+body {
+    font-family: "Kumbh Sans";
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
