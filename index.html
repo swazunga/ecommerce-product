@@ -46,8 +46,9 @@
           <li>Contact</li>
         </ul>
       </nav>
+      <button class="cart">
       <svg
-        class="cart"
+      
         width="22"
         height="20"
         xmlns="http://www.w3.org/2000/svg"
@@ -58,16 +59,25 @@
           fill-rule="nonzero"
         />
       </svg>
+    </button>
+    <div class="cartModal">
+      <div class="modalContent">
+       <p class="cartTitle"><b>Cart</b></p>
+       <hr>
+        <p class="cartContents">Your cart is empty.</p>
+      </div>
+    </div>
       <img class="avatar" src="assets/images/image-avatar.png" />
     </div>
     <div class="container">
       <div class="row mainBody">
-        <div class="col-sm-6">
+        <div class="lightbox col-sm-6">
+          <div class="images">
           <img class="productImg1" src="assets/images/image-product-1.jpg" />
           <img class="productImg2 hidden" src="assets/images/image-product-2.jpg">
           <img class="productImg3 hidden" src="assets/images/image-product-3.jpg">
           <img class="productImg4 hidden" src="assets/images/image-product-4.jpg">
-
+        </div>
           <br /><br />
           <div class="smallImgs">
             <img

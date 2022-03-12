@@ -19,6 +19,7 @@ body {
 
 .logo {
   margin: 1vw 0 0 0;
+  z-index: 2;
 }
 
 .banner {
@@ -39,9 +40,43 @@ body {
 }
 
 .cart {
-  margin: 1vw 0 0 30vw;
+  margin: 0.7vw 0 3vw 30vw;
+  border-style: none;
+  background-color: var(--White);
 }
 
+.cartModal {
+  display: none;
+  position: fixed;
+  margin-left: 65vw;
+  padding-top: 5vw;
+  left: 0;
+  top: 0;
+  width: 30vw;
+}
+
+.cartContents {
+  text-align: center;
+  color: var(--DarkGrayishBlue);
+}
+
+.modalContent {
+  background-color: var(--White);
+  margin: auto;
+  padding: 20px;
+  border: none;
+  width: 80%;
+  box-shadow: 0 0 10px darkgray;
+  border-radius: 5px;
+  height: 15vw;
+}
+
+.lightboxModal {
+  /* display: none; */
+  position: fixed;
+  margin: 200px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 .avatar {
   margin: 0 0 0 3vw;
   width: 3vw;

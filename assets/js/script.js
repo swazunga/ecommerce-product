@@ -9,6 +9,14 @@ var img1 = document.querySelector(".productImg1");
 var img2 = document.querySelector(".productImg2");
 var img3 = document.querySelector(".productImg3");
 var img4 = document.querySelector(".productImg4");
+var cart = document.querySelector(".cart");
+var cartModal = document.querySelector(".cartModal");
+var cartBtn = document.querySelector(".cartBtn");
+var cartContents = document.querySelector(".cartContents");
+var fallLimit = document.querySelector(".fallLimit");
+var price = document.querySelector(".price");
+var images = document.querySelector(".images");
+var lightbox = document.querySelector(".lightbox");
 
 plusBtn.addEventListener("click", function () {
   count.value++;
@@ -61,3 +69,30 @@ thumb4.addEventListener("click", function () {
   img3.classList.add("hidden");
   img4.classList.remove("hidden");
 });
+
+cart.addEventListener("click", function () {
+  cartModal.style.display = "block";
+});
+
+window.addEventListener("click", function (event) {
+  if (event.target == cartModal) {
+    cartModal.style.display = "none";
+  }
+});
+
+cartBtn.addEventListener("click", function () {
+  cartContents.textContent = fallLimit.innerText;
+  var itemLine = document.createElement("p");
+  cartContents.appendChild(itemLine);
+  itemLine.textContent =
+    price.innerText +
+    " x " +
+    count.value +
+    " $" +
+    parseInt(price.innerText.split("$")[1]) * count.value;
+});
+
+// images.addEventListener("click", function () {
+//   lightbox.classList.add("lightboxModal");
+//   console.log("pic");
+// });
