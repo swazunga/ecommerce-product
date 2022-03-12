@@ -1,12 +1,159 @@
 :root {
-    --Orange: hsl(26, 100%, 55%)
-    --PaleOrange: hsl(25, 100%, 94%)
+  --Orange: hsl(26, 100%, 55%);
+  --PaleOrange: hsl(25, 100%, 94%);
+  --VeryDarkBlue: hsl(220, 13%, 13%);
+  --DarkGrayishBlue: hsl(219, 9%, 45%);
+  --GrayishBlue: hsl(220, 14%, 75%);
+  --LightGrayishBlue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%); /*  (with 75% opacity for lightbox background) */
+}
+
+.hidden {
+  display: none;
 }
 
 body {
-    font-family: "Kumbh Sans";
+  font-family: "Kumbh Sans";
 }
+
+.logo {
+  margin: 1vw 0 0 0;
+}
+
+.banner {
+  display: flex;
+  padding: 1vw 0 0 5vw;
+  border-bottom: solid var(--LightGrayishBlue);
+  margin: 0 5vw 0 5vw;
+}
+.ulBanner {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.ulBanner li {
+  color: var(--DarkGrayishBlue);
+  padding: 0.9vw 1vw 0 1vw;
+  float: left;
+}
+
+.cart {
+  margin: 1vw 0 0 30vw;
+}
+
+.avatar {
+  margin: 0 0 0 3vw;
+  width: 3vw;
+  height: 3vw;
+}
+
+.mainBody {
+}
+
+.productImg1,
+.productImg2,
+.productImg3,
+.productImg4 {
+  margin: 5vw 0 0 0;
+  border-radius: 25px;
+  height: 450px;
+  width: 450px;
+}
+
+.smallImgs {
+}
+
+.thumb1,
+.thumb2,
+.thumb3 {
+  margin: 0 1vw 0 0;
+}
+.thumb1,
+.thumb2,
+.thumb3,
+.thumb4 {
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+}
+
+.thumb1:hover,
+.thumb2:hover,
+.thumb3:hover,
+.thumb4:hover {
+  opacity: 50%;
+}
+
+.inFocus {
+  border: solid var(--Orange);
+  opacity: 50%;
+}
+.rightSide {
+}
+
+.sneakCo {
+  text-align: left;
+  margin: 25vw 0 0 0;
+  color: var(--Orange);
+}
+
+.fallLimit {
+  font-size: 36px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.discount {
+  color: var(--Orange);
+  background-color: var(--PaleOrange);
+}
+
+.noPrice {
+  color: var(--DarkGrayishBlue);
+  text-decoration: line-through;
+}
+
+.boxes {
+  display: flex;
+  justify-content: left;
+}
+
+.minusBtn,
+.plusBtn,
+.zero {
+  border: none;
+  background-color: var(--LightGrayishBlue);
+  font-weight: bold;
+}
+
+.zero {
+  width: 5vw;
+  text-align: center;
+}
+
+.cartBtn {
+  background-color: var(--Orange);
+  color: var(--White);
+  border: none;
+  border-radius: 10px;
+  height: 3vw;
+  width: 20vw;
+}
+
+.cartBtn:hover {
+  opacity: 50%;
+}
+
+.btnImg {
+  color: var(--White);
+}
+
 .attribution {
+  margin: 5vw 0 0 0;
   font-size: 11px;
   text-align: center;
 }
