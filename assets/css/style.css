@@ -73,9 +73,10 @@ body {
 
 .lightboxModal {
   /* display: none; */
-  position: fixed;
-  margin: 200px;
+  position: absolute;
+  inset: 20px 20px;
   background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
 }
 .avatar {
   margin: 0 0 0 3vw;
